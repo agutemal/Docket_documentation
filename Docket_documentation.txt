@@ -1,0 +1,2 @@
+¿Qué es Docker?
+Es una plataforma para desarrollar y ejecutar aplicaciones en unidades estandarizadas llamadas contenedores
