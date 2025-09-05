@@ -1,2 +1,67 @@
 ¿Qué es Docker?
-Es una plataforma para desarrollar y ejecutar aplicaciones en unidades estandarizadas llamadas contenedores
+Es una plataforma para desarrollar y ejecutar aplicaciones en unidades estandarizadas llamadas contenedores.
+
+¿Qué es una imagen Docker?
+-Una imagen Docker es un paquete que incluye una aplicación y todos sus componentes.
+
+#Contenedor Docker:
+-Es una instancia en ejecución de una imagen Docker.
+-Es dinámico se puede detener, mover o eliminar.
+-Comparten el kernel de sistema operativo anfitrión.
+-Un contenedor esta aislado lo que garantiza que una aplicación se ejecute de manera
+consistente sin importar el entorno donde se encuentra.
+
+#Docker compose:
+-Es una herramienta que permite definir y administrara aplicaciones multi-contenedor.
+-Puedes definir la configuración de varias imágenes.
+
+#Docker Swarm y Kubernetes
+-Son herramientas de orquestación para contenedores Docker
+-Permiten administrar y escalar aplicaciones distribuidas en clousters de contenedores.
+
+#Ventajas
+-Portabilidad, consistencia en distintos SO, uso de recursos
+-Eficiencia de recursos, aislamiento, escalabilidad
+
+#OCI
+-Es una iniciativa de código abierto que tiene como objetivo establecer estándares abiertos
+para el formato de contenedores.
+-Busca garantizar la intraoperatoria entre contenedores.
+
+=========================Namespace==========================
+Los namespace son una característica del kernel de Linux que Docker usa para crear entornos
+aislados.
+#PID Namespace
+Proporciona aislamiento de procesos, los procesos de SO anfitrión no ven a los procesos de la imagen Docker
+
+#Network Namspace
+Proporciona aislamiento de red
+
+#Mount Namespace
+Proporciona aislamiento de sistema archivos, cada contenedor tiene su propio sistema de archivo, no puede acceder al sistema de archivo del host ni de otro contenedores.
+
+#IPC Namespace
+Los contenedores no pueden comunicarse directamente entre si por medio de ipc
+
+#UTS Namespace
+Cada contenedor tiene su propio hostname y nombre de dominio
+
+#CGROUPS
+son una característica del kernel de Linux utilizada para limitar, contabilizar y aislar los recursos del host, limite de CPU, memoria, limites en la entrada y salida de información, prioridad de procesos.
+=====================================================================
+
+Ultimo link:
+https://www.youtube.com/watch?v=6wbfODetPbE
+26:00
+
+
+
+
+
+
+
+
+
+
+
+
